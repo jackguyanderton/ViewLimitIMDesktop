@@ -1,0 +1,2 @@
+1.0.3 - 2021-01-19 - Chris Jean
+	Added iThemes updater system.

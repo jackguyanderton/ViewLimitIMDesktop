@@ -1,0 +1,35 @@
+{
+  "name": "skillfulplugins/rcp-view-limit",
+  "type": "wordpress-plugin",
+  "description": "Limit page views to non-members via access levels.",
+  "keywords": [
+    "rcp"
+  ],
+  "homepage": "https://skilledcode.com/plugins/rcp-view-limit",
+  "authors": [
+    {
+      "name": "Tanner Moushey",
+      "email": "tanner@iwitnessdesign.com",
+      "homepage": "https://skillfulplugins.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.0",
+    "composer/installers": "v1.0.12",
+    "cmb2/cmb2": "dev-master",
+    "skillfulplugins/toolbox": "^1.0.2"
+  },
+  "extra": {
+    "installer-paths": {
+      "vendor/{$name}": [
+        "cmb2/cmb2"
+      ]
+    }
+  },
+  "autoload": {
+    "files" : ["vendor/cmb2/init.php"],
+    "psr-4": {
+      "RCP_VL\\": "includes/"
+    }
+  }
+}

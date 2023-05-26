@@ -1,0 +1,76 @@
+#rcpvl-notice {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+	visibility: visible;
+	opacity: 1;
+	transition: visibility .3s, opacity .3s linear;
+}
+
+#rcpvl-hide-notice {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 5px;
+	font-size: 24px;
+	cursor: pointer;
+}
+
+#rcpvl-container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	margin: 20px auto;
+	max-width: 100%;
+	width: 80%;
+}
+
+#rcpvl-message {
+	margin: 10px auto;
+}
+
+#rcpvl-actions {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	margin: 0 auto;
+}
+
+#rcpvl-actions a {
+	padding: 8px 15px;
+	margin: 0 5px;
+}
+
+#rcpvl-link-one {
+	border: 1px solid #000;
+	background-color: #000;
+	color: #fff;
+}
+
+#rcpvl-link-two {
+	border: 1px solid;
+}
+
+@media only screen and (max-width: 768px) {
+
+	#rcpvl-container {
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	#rcpvl-actions {
+		width: 100%;
+	}
+
+	#rcpvl-actions a {
+		width: 100%;
+		margin: 5px auto;
+		text-align: center;
+	}
+}
